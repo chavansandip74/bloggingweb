@@ -1,0 +1,102 @@
+
+<style>
+    body {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cont {
+    text-align: center;
+    width: 40%;
+    height: 46vw;
+    border: 2px solid black;
+    background-color: rgb(237, 247, 244);
+    margin-left: 30vw;
+    border-radius: 4vw;
+    box-shadow: 2px 0px 2vw 1vw rgb(207, 140, 193);
+}
+
+    .cont input {
+        height: 4vw;
+
+        font-size: 1.5vw;
+        margin-top: 2vw;
+        width: 30vw;
+        border-radius: 1vw;
+        border: 2px solid rgb(228, 92, 133);
+        box-shadow: 2px 0px 2vw 1vw rgb(63, 62, 63);
+    }
+
+    .cont input::placeholder {
+        margin-left: 2vw;
+    }
+
+    .btn {
+        margin-top: 2vw;
+        height: 4vw;
+        width: 14vw;
+        color: black;
+        background-color: rgb(226, 214, 236);
+        border: 2px solid rgb(155, 42, 42);
+        border-radius: 2vw;
+        font-size: 1.5vw;
+        border-radius: 1vw;
+
+    }
+
+    .text {
+        color: brown;
+    }
+
+    .btn:hover {
+        background-color: rgb(36, 36, 59);
+        color: rgb(224, 216, 216);
+        cursor: pointer;
+    }
+    hr{
+        border: 0;
+    background: rgb(15, 14, 14);
+    height: 3px;
+    margin: 0 8vw;
+
+    }
+    h1{
+
+    font-size: 3vw;
+
+    margin-bottom: 0;
+}
+
+</style>
+<br>
+<br>
+
+<body>
+    <form action="/do_login" method="post">
+        <div class="cont">
+
+
+            <h1 class="text">-User Login-</h1>
+            <hr>
+            <br>
+             
+            <input type="number" name="user_mobile" placeholder="Enter User Mobile No:" required>
+            <br> <br>
+
+            <input type="password" name="user_password" placeholder="Enter Password:" required>
+            <br> <br>
+            <div>
+                <button class="btn"><b>Login Now</b></button>
+            </div>
+            <br> <br>
+            <h2>New User, <a href="/register">Create Account</a></h2>
+
+
+
+        </div>
+    </form>
+</body>
+<br>
+<br>
+<br>

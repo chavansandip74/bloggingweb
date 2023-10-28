@@ -1,0 +1,40 @@
+<%- include("navbar.ejs")%>
+    
+ 
+        <div class="container2">
+            <h1>Create And Post Your Blog</h1>
+        </div>
+            <hr>
+            <div class="container3">
+            <form action="/save_blog" method="post" enctype="multipart/form-data">
+                <h2>Blog Title:</h2>
+                <input type="text"  name="blog_title" required>
+
+                <h2>Author Name:</h2>
+                <input type="text"  name="author_name" required>
+                <h2>Blog Image:</h2>
+                <input type="file"  name="blog_img" accept="Image/*" required >
+                <h2>Date:</h2>
+                <input type="date"  name="blog_date" required>
+                <h2>Blog Type:</h2>
+                <select name="blog_type"  required>
+                    <option disabled selected >Select Blog Type</option>
+                    <option >Technology</option>
+                    <option >Travel</option>      
+                    <option >Health and Wellness</option>
+                    <option >Food and Cooking</option>     
+                    <option >Career and Professional Development</option> 
+                    <option >Education</option>    
+                    <option >Inspiration and Motivation</option>   
+                    <option >Sports and Fitness</option>   
+                    <option >History and Culture</option>   
+                   </select>
+                   <h2>Internal and External Links</h2>
+                   <input type="url"  name="blog_link" required placeholder="https://example.com">
+                <h2>Blog Content:</h2>
+                <textarea  name="blog_content" rows="8" required></textarea>
+
+                <input type="submit" value="Publish">
+            </form>
+        </div>
+        <%- include("footer.ejs")%>

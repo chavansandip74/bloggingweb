@@ -1,0 +1,35 @@
+<%- include("navbar.ejs")%>
+    <br>
+    <br>
+    <br>
+    <body>
+        
+    
+    <form action="/update_user" method="post" enctype="multipart/form-data">
+        <div class="container">
+
+
+            <h1 class="text">Update user</h1>
+            <br>
+            <hr>
+
+            user name<input type="name" name="user_name" value="<%=user.user_name %>">
+               <br>
+
+            Update user Email
+            <input type="Email" name="user_email" value="<%=user.user_email %>">
+            <br>
+
+            Enter user Password
+            <input type="text" name="user_password" value="<%=user.user_password %>">
+
+             <br>
+
+            <button class="btn">Update user</button>
+
+
+        </div>
+      
+    </form>
+</body>
+<%- include("footer.ejs")%>

@@ -1,0 +1,34 @@
+<%- include("anavbar.ejs")%>
+    
+    <body>
+        <div class="container2">
+            <h1 class="text">Update Admin</h1>
+        
+            <hr>
+        </div>
+    
+    <form action="/admin/update_admin/<%=admin.admin_id %>" method="post" enctype="multipart/form-data">
+        <div class="container">
+
+
+            
+
+            Admin name<input type="name" name="admin_name" value="<%=admin.admin_name %>">
+               <br>
+
+            Update admin Email
+            <input type="Email" name="admin_email" value="<%=admin.admin_email %>">
+            <br>
+
+            Enter admin Password
+            <input type="text" name="admin_password" value="<%=admin.admin_password %>">
+
+             <br>
+
+            <button class="btn">Update Admin</button>
+
+
+        </div>
+      
+    </form>
+</body>

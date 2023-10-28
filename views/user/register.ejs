@@ -1,0 +1,95 @@
+<style>
+    body {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cont {
+        box-shadow: 2px 0px 26px 9px rgb(17, 16, 17);
+        width: 60vw;
+        border: 2px solid rgb(131, 56, 56);
+        background-color: rgb(196, 218, 210);
+        margin: 2vw 19vw;
+        border-radius: 2vw;
+
+    }
+
+    h2 {
+        text-align: justify;
+        font-size: 2vw;
+        margin-left: 5vw;
+        margin-bottom: 0;
+    }
+
+    .cont input {
+        height: 4vw;
+        font-size: 1.5vw;
+     
+        width: 50vw;
+        border-radius: 12px;
+        border: 2px solid rgb(142, 165, 13);
+        box-shadow: 2px 0px 2vw 1vw rgb(90, 89, 27);
+    }
+
+    .text {
+        color: brown;
+    }
+
+    .btn {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        height: 4vw;
+        width: 10vw;
+        color: black;
+        background-color: rgb(211, 199, 223);
+        border: 2px solid rgb(20, 20, 20);
+        border-radius: 20px;
+        font-size: 1.2vw;
+        border-radius: 12px;
+    }
+    hr{
+        border: 0;
+    background: rgb(15, 14, 14);
+    height: 3px;
+    margin: 0 8vw;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(201, 176, 68);
+        color: rgb(10, 9, 9);
+        cursor: pointer;
+    }
+  
+</style>
+<br>
+<br>
+
+<body>
+    <form action="/save_user" method="post">
+        <div class="cont">
+            <h1 class="text"><b>-User Registration-</b></h1>
+           <hr>
+           <br>
+            <h2>Enter UserName:</h2><br>
+            <input type="text" name="user_name" required>
+            <br> <br>
+            <h2>Enter User Mobile Number: </h2>><br>
+            <input type="number" name="user_mobile" required>
+            <br> <br>
+            <h2>Enter Email: </h2><br>
+            <input type="email" name="user_email" required>
+            <br> <br>
+            <h2>Enter Password: </h2><br>
+            <input type="password" name="user_password" required>
+            <br> <br>
+
+            <button class="btn">Register Now</button>
+
+        </div>
+    </form>
+</body>
+<br>
+<br>
+<br>

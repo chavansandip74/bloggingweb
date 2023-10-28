@@ -1,0 +1,39 @@
+<%- include("anavbar.ejs")%>
+
+
+
+
+<div class="container2">
+    <h1>User Massages</h1>
+</div>
+
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th>Delete</th>
+            <th>SN</th>
+            <th>USER ID</th>
+            <th>USER NAME</th>
+            <th>USER MOBILE</th>
+            <th>USER EMAIL</th>
+            <th>USER MASSAGE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var i=0;i<user.length;i++){%>
+        <tr>
+            <td width="3%" style="white-space: nowrap;">
+                <a href="/admin/delete_massage/<%=user[i].user_id %>"><button class="button"><i class="fa fa-trash"></i></button></a>
+            </td>
+            <td><%=i+1 %></td>
+            <td> <%=user[i].user_id%></td>
+            <td> <%=user[i].user_name%></td>
+            <td> <%=user[i].user_mobile%></td>
+            <td> <%=user[i].user_email%></td>
+            <td> <%=user[i].user_massage%></td>
+        </tr>
+       <%}%>
+    </tbody>
+</table>
+<%- include("footer.ejs")%>

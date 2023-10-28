@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: rgb(252, 245, 245);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+    background-color: rgb(2, 2, 2, 0.6);
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vw;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.5vw;
+    margin: 0 2vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(221, 228, 215);
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    color: rgb(241, 15, 15);
+    font-size: 1.7vw;
+}
+
+.ico2 button {
+    background-color: chocolate;
+    height: 2.5vw;
+    width: 6vw;
+    font-size: 1vw;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+.ico2 button:hover {
+    background-color: rgb(55, 56, 53);
+   
+}
+
+.ico {
+    display: none;
+}
+
+
+/* Style the mobile menu icon */
+.iconm {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(206, 208, 214);
+}
+
+.right {
+    width: 60%;
+}
+
+.ico2 a {
+    cursor: pointer;
+    text-align: none;
+    font-size: 1.5vw;
+    /* margin: 0 2vw; */
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.left {
+    cursor: pointer;
+    font-size: 2vw;
+    font-weight: bolder;
+
+    text-shadow: 2px 5px 4px rgba(238, 12, 12, 0.904);
+}
+.sidenav{
+    display: none;
+}
+
+footer {
+    background-color: #333;
+
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.fcontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flogo {
+    text-align: center;
+}
+
+
+.flinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.flinks li {
+    margin-bottom: 10px;
+}
+
+.flinks a {
+    text-decoration: none;
+    color: #a8440a;
+    font-weight: bold;
+}
+
+.fsocial a {
+    margin: 0 10px;
+}
+
+.fbottom {
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.flogo {
+    text-align: center;
+}
+
+.fsocial a i{
+   text-decoration: none;
+  font-size: 4vw;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* home */
+
+.commentForm{
+    margin: 0;
+}
+.secblog {
+    justify-content: center;
+
+
+}
+.hcm{
+    display: none;
+}
+
+.main1 {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    margin: 1vw;
+    margin-left: 2vw;
+    box-shadow: 2px 0px 26px 9px rgb(17, 16, 17);
+
+
+}
+
+.post {
+    margin-bottom: 2vw;
+    border: 1px solid #ccc;
+    padding: 1vw;
+    /* height: 65vw; */
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1vw;
+    font-size: 1vw;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    border: 1px solid #ddd;
+    padding: 1vw;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-style: italic;
+}
+
+.date {
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+input {
+    width: 69%;
+    padding: 0.5vw;
+    margin: 1px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: content-box;
+}
+
+textarea {
+    width: 60%;
+    padding: 0.5vw;
+    margin: 1px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: content-box;
+}
+
+h1 {
+    color: rgb(218, 33, 64);
+    font-weight: bold;
+    font-size: 4vw;
+
+    font-family: 'Rowdies', cursive;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+hr {
+    border: 0;
+    background: rgb(15, 14, 14);
+    height: 3px;
+    margin: 0 8vw;
+
+}
+
+.heart-icon {
+    font-size: 3vw;
+    cursor: pointer;
+    transition: color 0.3s;
+    float: right;
+    margin-right: 2vw;
+}
+
+.heart-icon.red {
+    color: red;
+}
+
+#comment {
+    width: 45%;
+}
+
+.container2 {
+    /* height: 150vh; */
+    width: 100%;
+    margin-top: 5vw;
+
+}
+
+.con2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1vw;
+}
+
+.hed {
+    width: 100%;
+    height: 5vw;
+    overflow: hidden;
+}
+
+.hed h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.5vw;
+    transition: font-size 0.5s;
+}
+
+.hed:hover h2 {
+    white-space: normal;
+    font-size: 1vw;
+}
+
+/* admin userlist */
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 2vw auto;
+    font-size: 1.5vw;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* blog page */
+.container3 {
+    font-family: Arial, sans-serif;
+    background-color: #e7ceb7;
+    max-width: 80%;
+    margin: 2vw 5vw;
+    padding: 5vw;
+
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    
+    text-align: center;
+}
+
+.container3 h2 {
+    font-weight: bold;
+    color: #151718;
+    float: left;
+}
+
+form {
+    margin: 2vw 0;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 1vw;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 14vw;
+    margin-left: 33vw;
+}
+
+input[type="submit"]:hover {
+    background-color: #cecf78;
+    color: black;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 14vw;
+    margin-left: 33vw;
+    transition: font-size 0.5s;
+}
+
+.btn:hover {
+    background-color: #cecf78;
+    color: black;
+}
+
+/* contact page */
+
+.contact {
+
+    width: 100%;
+}
+
+.contact h1 {
+    color: rgb(34 29 24);
+    font-weight: bold;
+    font-size: 4vw;
+    margin-top: 2vw;
+    font-family: 'Rowdies', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    height: 8vw;
+}
+
+.lname {
+    font-family: "Sofia", sans-serif;
+    color: rgb(34 29 24);
+    text-align: justify;
+    width: 50%;
+    float: left;
+
+}
+
+.con h3 {
+    color: rgb(34 29 24);
+    font-weight: bold;
+    font-size: 2vw;
+
+    font-family: cursive;
+    text-transform: uppercase;
+
+}
+
+.con {
+    margin-top: 4vw;
+    margin-left: 10vw;
+    width: 69%;
+    height: 15%;
+    float: left;
+}
+
+.con h5 {
+    color: rgb(34 29 24);
+    font-weight: bold;
+    font-size: 1vw;
+
+    font-family: cursive;
+    text-transform: uppercase;
+
+}
+
+.rform {
+
+    color: rgb(34 29 24);
+    text-align: center;
+    width: 50%;
+    height: 17%;
+    float: left;
+    padding-bottom: 2vw;
+}
+
+.rform input {
+    margin: 1vw;
+    width: 70%;
+    height: 3vw;
+   font-size: 2vw;
+}
+
+.rform button {
+    width: 8vw;
+    height: 3vw;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.5vw;
+
+    background-color: #0fabf1c2;
+    border-radius: 11%;
+}
+
+.rform button:hover {
+    background-color: #36da7f;
+    color: red;
+}
+
+.icocon {
+    float: left;
+    font-size: 1.5vw;
+}
+
+.incon {
+    float: left;
+    margin-left: 1vw;
+}
+
+textarea {
+    margin: 1vw;
+    width: 80%;
+    font-size: 2vw;
+}
+
+.map {
+    width: 100%;
+}
+
+/* admin footer */
+.admin-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.admin-footer p {
+    margin: 0;
+}
+
+/* create like button */
+/* Style for the like button and count */
+.like-section {
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 3vw;
+}
+
+.like-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #000000; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.like-button.active {
+    color: red; /* Color when the button is active (liked) */
+    transform: scale(1.2); /* Optionally, you can scale the icon on like */
+}
+
+.like-button:hover {
+    color: red; /* Color on hover, you can change this to your preferred color */
+
+}
+.like-button.clicked {
+
+    color: rgb(250, 0, 0); /* You can change the color to your preference */
+}
+
+.admin-instructions {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-instructions h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 15px 0;
+    text-decoration: underline;
+}
+
+.admin-instructions p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin: 0 0 15px 0;
+}
+
+.admin-instructions ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.admin-instructions li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+.admin-instructions li p {
+    margin: 10px 0 0 0;
+}
+
+.admin-instructions a {
+    color: #0078d4;
+    text-decoration: underline;
+}
+
+.admin-instructions a:hover {
+    text-decoration: none;
+}
+.fs2{
+    font-size: 2vw;
+}

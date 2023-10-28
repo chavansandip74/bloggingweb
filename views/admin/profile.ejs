@@ -1,0 +1,43 @@
+
+<%- include("anavbar.ejs")%>
+
+
+
+<div class="container2">
+    <h1>ALL Blogs in your Website</h1>
+</div>
+
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th>SN</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+            <th>ADMIN ID</th>
+            <th>ADMIN NAME</th>
+          
+            <th>ADMIN EMAIL</th>
+            <th>USER PASSWORD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var i=0;i<admin.length;i++){%>
+        <tr>
+            <td><%=i+1 %></td>
+            <td width="3%" style="white-space: nowrap;">
+                <a href="/admin/edit_admin/<%=admin[i].admin_id %>"> <button class="button"><i class="fa fa-edit"></i></button></a>
+            </td>
+            <td width="3%" style="white-space: nowrap;">
+                <a href="/admin/delete_admin/<%=admin[i].admin_id %>"><button class="button"><i class="fa fa-trash"></i></button></a>
+            </td>
+            <td> <%=admin[i].admin_id%></td>
+            <td> <%=admin[i].admin_name%></td>
+           
+            <td> <%=admin[i].admin_email%></td>
+            <td> <%=admin[i].admin_password%></td>
+        </tr>
+       <%}%>
+    </tbody>
+</table>
+<%- include("footer.ejs")%>

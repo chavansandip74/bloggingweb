@@ -1,0 +1,76 @@
+<%- include("anavbar.ejs")%>
+
+<div class="container2">
+    <h1>ALL Blogs in your Website</h1>
+</div>
+
+<hr>
+<div class="con2">
+        <% for(var i=blogs.length-1;i>=0;i--){%>
+
+            <div class="main1">
+                <article class="post">
+                    <div class="hed">
+                        <h2> Type:- <%=blogs[i].blog_type%>
+                        </h2>
+                        <hr>
+                        <h2>
+                            <%=blogs[i].blog_title%>
+                        </h2>
+                    </div>
+                    <img src="/uploads/<%=blogs[i].blog_img%>" alt="Blog Post Image">
+                    <p>
+                        <%=blogs[i].blog_content%>
+                    </p>
+                    <a href="<%=blogs[i].blog_link%>">Read more</a>
+                    <div class="like-section">
+                        <form  action="/like/<%=blogs[i].blog_id %>" method="post" enctype="multipart/form-data">
+                            <button type="submit" class="like-button" data-blog-id="<%=blogs[i].blog_id %>">Like</button>
+                            <input type="hidden" name="blog_id" value="<%= blogs[i].blog_id %>">
+                        </form>
+                        <% for (var k = 0; k < likes.length; k++) { %>
+                            <% if (blogs[i].blog_id === likes[k].blog_id) { %>
+                                <span class="like-count" id="like-count-<%= blogs[i].blog_id %>"><%= likes[k].like_count %></span>
+                            <% } %>
+                        <% } %>
+                    </div>
+
+                    <div class="comments">
+                        <h3>Comments</h3>
+                        <section class="comment-form">
+
+                            <form id="commentForm" action="/comment/<%=blogs[i].blog_id%>" method="post">
+            
+            
+                                <label for="comment">Comment:</label>
+                                <input id="comment" name="comment" required>
+                                <button class="button" type="submit">Submit</button>
+                            </form>
+                            <% for (var j = 0; j < cm.length; j++) { %>
+                                <% if (blogs[i].blog_id === cm[j].blog_id) { %>
+                                    <p>
+                                        <strong><%= cm[j].user_name %></strong>
+                                        <%= cm[j].user_comment %>
+                                    </p>
+                                <% } %>
+                            <% } %>
+                        
+                        </section>
+                        
+                    </div>
+
+                    <p class="author">Author Name:
+                        <%=blogs[i].author_name%>
+                    </p>
+
+                    <p class="date">
+                        Date:<%=blogs[i].blog_date%>
+                    </p>
+                    
+                    <h2 class="fs2" style="color: red;">Delete BLog = <a href="/delete_blog/<%=blogs[i].blog_id%>"><button class="button"><i class="fa fa-trash fa-2x"></i></button></a></h2>
+                </article>
+            </div>
+            <%}%>
+            
+    </div>
+<%- include("footer.ejs")%>

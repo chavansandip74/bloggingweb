@@ -1,0 +1,169 @@
+@media(max-width:480px) {
+
+    nav {
+        height: 8vw;
+    }
+
+    .ico2 {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .ico {
+        float: right;
+        display: block;
+        font-size: 7vw;
+        margin-right: 6vw;
+    }
+
+    .iconm {
+        color: white;
+    }
+
+
+    .fa-3x {
+        font-size: 1em;
+    }
+
+    .fa-2x {
+        font-size: 1em;
+    }
+
+    .container2 {
+
+        margin-top: 10vw;
+    }
+
+    .con2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main1 {
+        width: 90%;
+    }
+
+    .fcontent {
+        display: block;
+    }
+
+    .like-section {
+
+        margin-right: 4vw;
+    }
+
+    #cmh {
+        display: none;
+    }
+
+    #comment {
+        width: 74%;
+    }
+
+    .hcm {
+        display: block;
+        font-size: 4vw;
+    }
+
+
+.hed {
+
+    height: 12vw;
+}
+
+.hed h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    transition: font-size 0.5s;
+
+    font-size: 3.5vw;
+}
+
+textarea {
+    height: 10vw;
+}
+
+input[type="submit"] {
+    width: 23vw;
+}
+
+.container3 h2 {
+    font-size: 5vw;
+}
+
+.cbtn {
+    margin-bottom: 2vw;
+}
+
+.fsocial a i {
+    font-size: 8vw;
+}
+
+.fs2 {
+    font-size: 6vw;
+}
+
+.button {
+    font-size: 2vw;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    width: 151px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+p,a{
+    font-size: 3vw;
+    margin: 3vw;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+}
+
+.iconm {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+}

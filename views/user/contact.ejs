@@ -1,0 +1,65 @@
+<%- include("navbar.ejs")%>
+
+<div class="container2">
+    <h1>Contact</h1>
+    <hr>
+    <div class="lname">
+        <div class="con">
+            <div class="icocon">
+                <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="incon">
+                <h3> Our Office Address</h3>
+                <h5>Borle, Ahemadnagar, Maharashtra 413201</h5>
+            </div>
+        </div>
+
+        <div class="con">
+            <div class="icocon">
+                <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="incon">
+                <h3> General Enquiries</h3>
+                <h5>chavansandip7499@gmail.com</h5>
+            </div>
+        </div>
+
+        <div class="con">
+            <div class="icocon">
+                <i class="fa fa-phone-square fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="incon">
+                <h3> Call Us</h3>
+                <h5>+91-7499743836</h5>
+            </div>
+        </div>
+        <div class="con">
+            <div class="icocon">
+                <i class="fa fa-unlock-alt fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="incon">
+                <h3> Our Timing</h3>
+                <h5>Mon - Sun : 09:00 AM - 09:00 PM</h5>
+            </div>
+        </div>
+    </div>
+    <div class="rform">
+        <form class="commentForm" action="/umassage" method="post">
+            <input type="text" name="user_name" placeholder="YOUR NAME" value="<%=user.user_name%>">
+            <input type="text" name="user_email"  placeholder="YOUR EMAIL" value="<%=user.user_email%>">
+            <input type="number" name="user_mobile"  placeholder="YOUR CONTACT NO" value="<%=user.user_mobile%>">
+            
+            <textarea  name="user_massage" rows="8" placeholder="WRITE YOUR MASSAGE..." required></textarea>
+
+            <br>
+            <button class="cbtn">Submit</button>
+
+
+        </form>
+    </div>
+   
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.069641337734!2d74.72844097462331!3d19.10460055107518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcb0870066d8f5%3A0xa7347f624488ac10!2sNew%20Art%20College%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1698084103174!5m2!1sen!2sin" width="100%" height="450vw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<%- include("footer.ejs")%>

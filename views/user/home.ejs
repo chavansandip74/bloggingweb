@@ -1,0 +1,115 @@
+<%- include("navbar.ejs")%>
+   
+
+    <div class="container2">
+        <h1>Newly Added Blogs</h1>
+    </div>
+
+    <hr>
+    <div class="con2">
+        <% for(var i=blogs.length-1;i>=0;i--){%>
+
+            <div class="main1">
+                <article class="post">
+                    <div class="hed">
+                        <h2> Type:- <%=blogs[i].blog_type%>
+                        </h2>
+                        <hr>
+                        <h2>
+                            <%=blogs[i].blog_title%>
+                        </h2>
+                    </div>
+                    <img src="/uploads/<%=blogs[i].blog_img%>" alt="Blog Post Image">
+                    <p>
+                        <%=blogs[i].blog_content%>
+                    </p>
+                    <a href="<%=blogs[i].blog_link%>">Read more</a>
+                    <div class="like-section">
+                        <form class="commentForm"  action="/like/<%=blogs[i].blog_id %>" method="post" enctype="multipart/form-data">
+                            <button type="submit" class="like-button" data-blog-id="<%=blogs[i].blog_id %>">Like</button>
+                            <input type="hidden" name="blog_id" value="<%= blogs[i].blog_id %>">
+                        </form>
+                        <% for (var k = 0; k < likes.length; k++) { %>
+                            <% if (blogs[i].blog_id === likes[k].blog_id) { %>
+                                <span class="like-count" id="like-count-<%= blogs[i].blog_id %>"><%= likes[k].like_count %></span>
+                            <% } %>
+                        <% } %>
+                    </div>
+
+                    <div class="comments">
+                        <h3 class="hcm">Comments</h3>
+                        <section class="comment-form">
+
+                            <form class="commentForm" action="/comment/<%=blogs[i].blog_id%>" method="post">
+            
+                                 
+                                <label for="comment" id="cmh">Comment:</label>
+                                <input id="comment" name="comment" required>
+                                <button class="button" type="submit">Submit</button>
+                            </form>
+                            <% for (var j = 0; j < cm.length; j++) { %>
+                                <% if (blogs[i].blog_id === cm[j].blog_id) { %>
+                                    <p>
+                                        <strong><%= cm[j].user_name %></strong>
+                                        <%= cm[j].user_comment %>
+                                    </p>
+                                <% } %>
+                            <% } %>
+                        
+                        </section>
+                        
+                    </div>
+
+                    <p class="author">Author Name:
+                        <%=blogs[i].author_name%>
+                    </p>
+
+                    <p class="date">
+                        Date:<%=blogs[i].blog_date%>
+                    </p>
+                </article>
+            </div>
+            <%}%>
+            
+    </div>
+
+  
+
+    <%- include("footer.ejs")%>
+
+    <script>
+      
+    </script>
+    
+      <!-- <script>
+        function like() {
+            const heart = document.getElementById('heart');
+            heart.classList.toggle('red');
+
+
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('commentForm');
+            const commentsSection = document.querySelector('.comments');
+
+            commentForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get the values from the form
+                const name = document.getElementById('name').value;
+                const comment = document.getElementById('comment').value;
+
+                // Create a new comment element
+                const newComment = document.createElement('div');
+                newComment.classList.add('comment');
+                newComment.innerHTML = `<p><strong>${name}:</strong> ${comment}</p>`;
+
+                // Append the new comment to the comments section
+                commentsSection.appendChild(newComment);
+
+                // Reset the form
+                commentForm.reset();
+            });
+        });
+
+    </script> -->

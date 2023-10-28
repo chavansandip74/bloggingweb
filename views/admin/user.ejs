@@ -1,0 +1,40 @@
+<%- include("anavbar.ejs")%>
+
+
+<div class="container2" >
+    <h1>ALL USER IN WEBSITE</h1>
+</div>
+
+<hr>
+
+<h2>Total BLogs=<%=cb.countblog%></h2>
+<table>
+    <thead>
+        <tr>
+            <th>DELETE</th>
+            <th>SN</th>
+            <th>USER ID</th>
+            <th>USER NAME</th>
+            <th>USER MOBILE</th>
+            <th>USER EMAIL</th>
+            <th>USER BLOG</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var i=0;i<user.length;i++){%>
+        <tr>
+            <td width="3%" style="white-space: nowrap;">
+                <a href="/admin/delete_user/<%=user[i].user_id %>"><button class="button"><i class="fa fa-trash"></i></button></a>
+            </td>
+            <td><%=i+1 %></td>
+            <td> <%=user[i].user_id%></td>
+            <td> <%=user[i].user_name%></td>
+            <td> <%=user[i].user_mobile%></td>
+            <td> <%=user[i].user_email%></td>
+             <td><%=blog[i].cnt%></td>
+        </tr>
+       <%}%>
+    </tbody>
+    
+</table>
+<%- include("footer.ejs")%>

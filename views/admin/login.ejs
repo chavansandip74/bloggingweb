@@ -1,0 +1,84 @@
+<style>
+    body {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cont {
+        text-align: center;
+        width: 30%;
+        height: 70%;
+        border: 2px solid black;
+        background-color: rgb(237, 247, 244);
+        margin-left: 450px;
+        border-radius: 12px;
+    }
+
+    .cont input {
+        height: 45px;
+
+        font-size: 17px;
+        margin-top: 20px;
+        width: 300px;
+        border-radius: 12px;
+        border: 2px solid rgb(228, 92, 133);
+        box-shadow: 2px 0px 26px 9px rgb(63, 62, 63);
+    }
+
+    .cont input::placeholder {
+        margin-left: 5px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        height: 45px;
+        width: 140px;
+        color: black;
+        background-color: rgb(226, 214, 236);
+        border: 2px solid rgb(155, 42, 42);
+        border-radius: 20px;
+        font-size: 16px;
+        border-radius: 12px;
+
+    }
+
+    .text {
+        color: brown;
+    }
+
+    .btn:hover {
+        background-color: rgb(36, 36, 59);
+        color: rgb(224, 216, 216);
+        cursor: pointer;
+    }
+</style>
+<br>
+<br>
+
+<body>
+    <form action="/admin/admin_login_process" method="post">
+        <div class="cont">
+
+
+            <h1 class="text"><b>-Admin Login-</b></h1>
+            <br>
+
+            <input type="text" name="admin_name" placeholder="Enter Admin name:" required>
+            <br> <br>
+
+            <input type="password" name="admin_password" placeholder="Enter Password:" required>
+            <br> <br>
+        
+            <button class="btn">Login Now</button>
+           
+
+
+
+
+        </div>
+    </form>
+</body>
+<br>
+<br>
+<br>
